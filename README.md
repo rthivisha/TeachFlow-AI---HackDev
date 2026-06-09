@@ -247,9 +247,10 @@ Our mission is to reduce preparation time, improve teaching quality, and make cu
 
 ## 👥 Team
 
-### Synora Intel
+### Thivisha 
+--individual participant
 
-Built because great teachers deserve better tools.
+-Built because great teachers deserve better tools.
 
 ---
 
