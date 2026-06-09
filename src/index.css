@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #F7F6F3;
+  --bg-secondary: #FFFFFF;
+  --text-primary: #0D0D0D;
+  --text-secondary: #4A4A4A;
+  --accent-purple: #6B5CF6;
+  --accent-teal: #0FA884;
+  --accent-amber: #F59E0B;
+  --accent-coral: #E85D40;
+  --accent-blue: #2563EB;
+  --border: rgba(0, 0, 0, 0.08);
+
+  --gap: 1.5rem;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.72;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/* Custom typography classes */
+.font-display-h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.font-section-h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.font-card-h3 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+}
+
+.font-eyebrow {
+  font-family: 'Syne', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Orbiting Animation */
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translate(var(--orbit-x), var(--orbit-y)) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(var(--orbit-x), var(--orbit-y)) rotate(-360deg);
+  }
+}
+
+.orbit-item {
+  animation: orbit var(--orbit-duration, 20s) linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12px; /* Center alignment adjustment */
+  margin-left: -40px; /* Center alignment adjustment */
+}
+
+/* Custom scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(107, 92, 246, 0.2) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(107, 92, 246, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 92, 246, 0.4);
+}
